@@ -24,7 +24,7 @@ But it's not always easy because some people in the town don't understand their 
 In the story, you'll see Alex and Riley facing challenges and discovering who they really are.
 The town of Evergreen Falls becomes the backdrop for their sweet and sometimes tough journey.
 It's a simple, heartwarming tale about friendship, love, and finding the courage to be yourself, no matter what others think.
-""")
+""", height=300)
 submit_button = st.button('Submit')
 
 if submit_button:

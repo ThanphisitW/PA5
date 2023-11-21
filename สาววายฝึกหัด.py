@@ -12,9 +12,9 @@ prompt = """
         """
 
 st.title("สาววายฝึกหัด")
-top_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรุก] :smirk: (English)', '[Top Win]')
-bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรับ] :wink: (English)', '[Mild Fluke]')
-story = st.text_area('โปรดกรอกสตอรี่ฉบับย่อที่ต้องการ :flushed: (English)', """[In the cozy town of Evergreen Falls, there are two boys named Alex and Riley.
+top_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรุก] :smirk: (English)', 'Top Win')
+bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรับ] :wink: (English)', 'Mild Fluke')
+story = st.text_area('โปรดกรอกสตอรี่ฉบับย่อที่ต้องการ :flushed: (English)', """In the cozy town of Evergreen Falls, there are two boys named Alex and Riley.
 Alex loves reading books and taking pictures, while Riley is a cool skateboarder.
 They become good friends even though they're different.
 
@@ -23,7 +23,7 @@ But it's not always easy because some people in the town don't understand their 
 
 In the story, you'll see Alex and Riley facing challenges and discovering who they really are.
 The town of Evergreen Falls becomes the backdrop for their sweet and sometimes tough journey.
-It's a simple, heartwarming tale about friendship, love, and finding the courage to be yourself, no matter what others think.]
+It's a simple, heartwarming tale about friendship, love, and finding the courage to be yourself, no matter what others think.
 """)
 submit_button = st.button('Submit')
 

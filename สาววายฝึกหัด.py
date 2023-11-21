@@ -12,10 +12,9 @@ prompt = """
         """
 
 st.title("สาววายฝึกหัด")
-top_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ารุก]:smirk: (ภาษาอังกฤษ)', 'ตัวอย่างเช่น Top Win')
-bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ายรับ]:wink: (ภาษาอังกฤษ)', 'ตัวอย่างเช่น Mild Fluke')
-story = st.text_area('โปรดกรอกสตอรี่คร่าว ๆ ที่ต้องการ:flushed: (ภาษาอังกฤษ)', """
-                     ตัวอย่างเช่น
+top_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ายรุก] :smirk: (English)', 'ตัวอย่างเช่น Top Win')
+bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ายรับ] :wink: (English)', 'ตัวอย่างเช่น Mild Fluke')
+story = st.text_area('โปรดกรอกสตอรี่คร่าว ๆ ที่ต้องการ:flushed: (English)', """ตัวอย่างเช่น
                      In the cozy town of Evergreen Falls, there are two boys named Alex and Riley.
                      Alex loves reading books and taking pictures, while Riley is a cool skateboarder.
                      They become good friends even though they're different.

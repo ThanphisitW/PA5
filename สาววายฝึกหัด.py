@@ -34,16 +34,16 @@ if submit_button:
         {"role": "system", "content": prompt},
         {'role': 'user', 'content': [top_name, bottom_name, story]}
         ]
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=message
-    )
+    # #response = client.chat.completions.create(
+    #     model="gpt-3.5-turbo",
+    #     messages=message
+    # )
     st.markdown('AI response:')
-    suggestion_dictionary = response.choices[0].message.content
+    #suggestion_dictionary = response.choices[0].message.content
 
-    sd = json.loads(suggestion_dictionary)
+    #sd = json.loads(suggestion_dictionary)
 
-    print(sd)
-    suggestion_df = pd.DataFrame.from_dict(sd)
-    print(suggestion_df)
-    st.table(suggestion_df)
+    #print(sd)
+    # suggestion_df = pd.DataFrame.from_dict(sd)
+    # print(suggestion_df)
+    # st.table(suggestion_df)

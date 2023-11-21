@@ -14,18 +14,18 @@ prompt = """
 st.title("สาววายฝึกหัด")
 top_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ายรุก] :smirk: (English)', 'ตัวอย่างเช่น Top Win')
 bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร:rainbow[ฝ่ายรับ] :wink: (English)', 'ตัวอย่างเช่น Mild Fluke')
-story = st.text_area('โปรดกรอกสตอรี่คร่าว ๆ ที่ต้องการ:flushed: (English)', """ตัวอย่างเช่น
-                     In the cozy town of Evergreen Falls, there are two boys named Alex and Riley.
-                     Alex loves reading books and taking pictures, while Riley is a cool skateboarder.
-                     They become good friends even though they're different.
-                     
-                     As they spend time together, Alex and Riley realize they have special feelings for each other.
-                     But it's not always easy because some people in the town don't understand their love.
-                     
-                     In the story, you'll see Alex and Riley facing challenges and discovering who they really are.
-                     The town of Evergreen Falls becomes the backdrop for their sweet and sometimes tough journey.
-                     It's a simple, heartwarming tale about friendship, love, and finding the courage to be yourself, no matter what others think.
-                     """)
+story = st.text_area('โปรดกรอกสตอรี่คร่าว ๆ ที่ต้องการ :flushed: (English)', """ตัวอย่างเช่น
+In the cozy town of Evergreen Falls, there are two boys named Alex and Riley.
+Alex loves reading books and taking pictures, while Riley is a cool skateboarder.
+They become good friends even though they're different.
+
+As they spend time together, Alex and Riley realize they have special feelings for each other.
+But it's not always easy because some people in the town don't understand their love.
+
+In the story, you'll see Alex and Riley facing challenges and discovering who they really are.
+The town of Evergreen Falls becomes the backdrop for their sweet and sometimes tough journey.
+It's a simple, heartwarming tale about friendship, love, and finding the courage to be yourself, no matter what others think.
+""")
 submit_button = st.button('Submit')
 
 if submit_button:

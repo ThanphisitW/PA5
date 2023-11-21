@@ -4,7 +4,6 @@ import pandas as pd
 
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
-client = openai.OpenAI(api_key=user_api_key)
 prompt = """
         Act as a BL romance fiction writer. you will receive names of 2 male characters and a short description of the story
         you will write a long story about the 2 characters and their relationship. It required to be at least 3 chapters long.

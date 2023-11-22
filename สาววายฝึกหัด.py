@@ -12,8 +12,8 @@ prompt = """
         """
 
 st.title("สาววายฝึกหัด")
-top_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรุก] :smirk: (English)', 'Top Win')
-bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร :rainbow[ฝ่ายรับ] :wink: (English)', 'Mild Fluke')
+top_name = st.text_area('โปรดกรอกชื่อตัวละคร :red[ฝ่ายรุก] :smirk: (English)', 'Top Win')
+bottom_name = st.text_area('โปรดกรอกชื่อตัวละคร :blue[ฝ่ายรับ] :wink: (English)', 'Mild Fluke')
 story = st.text_area('โปรดกรอกสตอรี่ฉบับย่อที่ต้องการ :flushed: (English)', """In the cozy town of Evergreen Falls, there are two boys named Top and Mild.
 Top loves reading books and taking pictures, while Mild is a cool skateboarder.
 They become good friends even though they're different.

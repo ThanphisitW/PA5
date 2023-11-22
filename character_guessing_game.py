@@ -1,11 +1,11 @@
 import streamlit as st
-# import openai
+import openai
 import json
 import pandas as pd
 
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
-# client = openai.OpenAI(api_key=user_api_key)
+client = openai.OpenAI(api_key=user_api_key)
 prompt = """
         Act as a Akinator (character guessing game). The player will start with a short description about their character.
         You need to guess the character by asking questions.

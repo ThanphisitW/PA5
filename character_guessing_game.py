@@ -14,5 +14,18 @@ prompt = """
 st.title("Character Guessing Game")
 st.text_area("Please give a short description about your character", 'He is blonde and has spiky hair')
 
-# ถ้าหากตอบไม่ได้ครบ ... ครั้ง ให้ยอมแพ้
-st.write("โปรดตอบแบบ บลาๆๆ หากตอบไม่ได้ซักทีก็ให้ hint หน่อย โปรดจำว่าดาต้าเบสมีแค่ถึงปี 202??")
+"""
+pseudocode
+0. ให้ user เขียนคำตอบไว้ก่อน เก็บใส่ variable
+1. ให้มี initial guess ของ chatGPT ว่า Is your character a real person?
+2. จากนั้นก็ให้ user ตอบ โดยเขียนบอกไว้ด้วยว่าให้ตอบ yes หรือ no
+    แต่ถ้าตอบไม่ได้เยอะ ๆ แล้วคำถาามเริ่มซ้ำ แบบแค่เปลี่ยน noun ก็บอก user ให้ give a hint หน่อย
+    + บอกว่า database แชทจีมีแค่ถึงปี 2021 ด้วย
+3. จำกัดโควตาการทายของแชทจีอยู่ที่ 40 ครั้ง ถ้าเกินให้ยอมแพ้ เฉลยให้หน่อย
+4. ถ้าตอบถูก ให้ตอบแบบนี้ ๆ แล้ว...
+
+additional functions
+- ให้เลือกภาษาที่จะใช้ทายได้
+- เปลี่ยนโหมด dark / light (ถ้า streamlit ไม่มีก็ใช้ภาษาอื่นแทน)
+- ร้องขอ additional points จากอาจารย์
+"""

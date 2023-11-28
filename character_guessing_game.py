@@ -20,13 +20,13 @@ Additional functions
 - ร้องขอ additional points จากอาจารย์
 """
 
-# prompt = """
-#         Act as a Akinator (character guessing game). The player will start with a short description about their character.
-#         You need to guess the character by asking questions.
-#         """
+prompt = """
+        Act as a Akinator (character guessing game). The player will start with a short description about their character.
+        You need to guess the character by asking questions.
+        """
 
-# st.title("Character Guessing Game")
-# st.text_area("Please give a short description about your character", 'He is blonde and has spiky hair')
+st.title("Character Guessing Game")
+st.text_area("Please give a short description about your character", 'He is blonde and has spiky hair')
 
 # """
 # Character Guessing Game

@@ -6,6 +6,31 @@ import pandas as pd
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
+prompt = """Act as a Akinator. You will received a clue from player and your job is to guess the character or person that player think of.
+You will first ask the player if their character is a real person or fictional character. Then, you will guess based on player's answer.
+"""
+
+st.title("Character Guessing Game")
+# Initial message from chatGPT
+st.write("Is your character a real person?")
+description = st.text_input("Please give a short description about your character", 'He is blonde and has spiky hair')
+submit_button = st.button("Submit")
+
+if submit_button:
+    message = [
+        {"role": "system", "content": "Is your character a real person?"},
+        {'role': 'user', 'content': description}
+    ]
+    for i in range(40):  # Limit to 40 guesses
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=message
+        )
+        suggestion_dictionary = response.choices[0].message.content
+        sd = json.loads(suggestion_dictionary)
+        st.write(f'AI Guess {i+1}: {sd["content"]}')
+        user_response = st.text_input("Please respond with yes or no, or give a hint if the question is repetitive.")
+        message.append({'role': 'user', 'content': user_response})
 
 """
 Murdurer guessing game
@@ -19,27 +44,3 @@ Additional functions
 - เปลี่ยนโหมด dark / light (ถ้า streamlit ไม่มีก็ใช้ภาษาอื่นแทน)
 - ร้องขอ additional points จากอาจารย์
 """
-
-prompt = """
-        Act as a Akinator (character guessing game). The player will start with a short description about their character.
-        You need to guess the character by asking questions.
-        """
-
-st.title("Character Guessing Game")
-st.text_area("Please give a short description about your character", 'He is blonde and has spiky hair')
-
-# """
-# Character Guessing Game
-# pseudocode
-# 1. ให้มี initial guess ของ chatGPT ว่า Is your character a real person?
-# 2. จากนั้นก็ให้ user ตอบ โดยเขียนบอกไว้ด้วยว่าให้ตอบ yes หรือ no
-#     แต่ถ้าตอบไม่ได้เยอะ ๆ แล้วคำถาามเริ่มซ้ำ แบบแค่เปลี่ยน noun ก็บอก user ให้ give a hint หน่อย
-#     + บอกว่า database แชทจีมีแค่ถึงปี 2021 ด้วย
-# 3. จำกัดโควตาการทายของแชทจีอยู่ที่ 40 ครั้ง ถ้าเกินให้ยอมแพ้ เฉลยให้หน่อย
-
-# additional functions
-# - ให้ user กด space เพื่อส่งข้อความเหมือนแชทแทนที่จะเป็น button
-# - ให้เลือกภาษาที่จะใช้ทายได้
-# - เปลี่ยนโหมด dark / light (ถ้า streamlit ไม่มีก็ใช้ภาษาอื่นแทน)
-# - ร้องขอ additional points จากอาจารย์
-# """

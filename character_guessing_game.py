@@ -21,38 +21,20 @@ messages_so_far = [
 ]
 
 if submit_button:
-    if user_input.lower() == 'yes':
-        messages_so_far.append({'role': 'user', 'content': user_input})
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages_so_far
-        )
-        # Extract the message content from the AI's response
-        ai_response_text = response.choices[0].message.content
+    messages_so_far.append({'role': 'user', 'content': user_input})
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages_so_far
+    )
+    # Extract the message content from the AI's response
+    ai_response_text = response.choices[0].message.content
 
-        # Print the AI's response
-        st.markdown('**AI response:**')
-        st.write(ai_response_text)
+    # Print the AI's response
+    st.markdown('**AI response:**')
+    st.write(ai_response_text)
 
-        # Add the AI's response to the conversation history
-        messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
-
-    elif user_input.lower() == 'no':
-        messages_so_far.append({'role': 'user', 'content': user_input})
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages_so_far
-        )
-        # Extract the message content from the AI's response
-        ai_response_text = response.choices[0].message.content
-
-        # Print the AI's response
-        st.markdown('**AI response:**')
-        st.write(ai_response_text)
-
-        # Add the AI's response to the conversation history
-        messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
-
+    # Add the AI's response to the conversation history
+    messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
 
 
 

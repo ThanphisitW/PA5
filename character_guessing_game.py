@@ -14,60 +14,33 @@ Do not ask the same question or repeated queestion.
 st.title("Character Guessing Game")
 st.markdown("Please remind that the AI model is based on the information till 2021.")
 
-# messages_so_far = [
-#     {"role": "system", "content": prompt},
-# ]
+messages_so_far = [
+    {"role": "system", "content": prompt},
+]
 
-# # Get the user's input
-# user_input = st.text_input("Player's Answer")
+# Get the user's input
+user_input = st.text_input("Player's Answer")
 
-# if st.button("Submit"):
-#     # Add the user's input to the conversation history
-#     messages_so_far.append({"role": "user", "content": user_input})
+if st.button("Submit"):
+    # Add the user's input to the conversation history
+    messages_so_far.append({"role": "user", "content": user_input})
 
-#     # Generate a new message from the AI
-#     response = client.chat.completions.create(
-#         model="gpt-3.5-turbo",
-#         messages=messages_so_far,
-#     )
-
-#     # Extract the message content from the AI's response
-#     ai_response_text = response.choices[0].message.content
-
-#     # Print the AI's response
-#     st.markdown('**AI response:**')
-#     st.write(ai_response_text)
-
-#     # Add the AI's response to the conversation history
-#     messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
-
-# # Clear session state if the user wants to play again
-# if st.button("Play Again"):
-#     st.session_state.clear()
-
-conversation = []
-
-def ask_question(prompt):
-    response = openai.Completion.create(
+    # Generate a new message from the AI
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        messages=conversation,
-        prompt=prompt,
-        max_tokens=100,
-        temperature=0.7,
+        messages=messages_so_far,
     )
-    return response.choices[0].message.content.strip()
 
-def akinator_game():
-    st.title("Akinator-style Character Guessing Game")
-    st.markdown("Think of a character, and I will try to guess who it is!")
+    # Extract the message content from the AI's response
+    ai_response_text = response.choices[0].message.content
 
-    while True:
-        user_input = st.text_input("You can answer with 'yes' or 'no'", "yes")
-        conversation.append({"role": "user", "content": user_input})
+    # Print the AI's response
+    st.markdown('**AI response:**')
+    st.write(ai_response_text)
 
-        # Ask the AI based on the user's input
-        ai_response = ask_question(f"Is your character {user_input.lower()}?")
+    # Add the AI's response to the conversation history
+    messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
 
-        # Display AI's response
-        st.write(ai_response)
-        conversation.append({"role": "assistant", "content": ai_response})
+# Clear session state if the user wants to play again
+if st.button("Play Again"):
+    st.session_state.clear()

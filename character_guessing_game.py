@@ -16,14 +16,27 @@ user_input = st.text_input("Please answer yes or no", 'yes')
 submit_button = st.button("Submit")
 
 if submit_button:
-    messages_so_far = [
-        {"role": "system", "content": prompt},
-        {'role': 'user', 'content': user_input},
-    ]
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=messages_so_far
-    )
-    # Show the response from the AI in a box
-    st.markdown('**AI response:**')
-    st.write(response['choices'][0]['message']['content'])
+    if user_input.lower() == 'yes':
+        messages_so_far = [
+            {"role": "system", "content": prompt},
+            {'role': 'user', 'content': user_input},
+        ]
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=messages_so_far
+        )
+        # Show the response from the AI in a box
+        st.markdown('**AI response:**')
+        st.write(response['choices'][0]['message']['content'])
+    elif user_input.lower() == 'no':
+        messages_so_far = [
+            {"role": "system", "content": prompt},
+            {'role': 'user', 'content': user_input},
+        ]
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=messages_so_far
+        )
+        # Show the response from the AI in a box
+        st.markdown('**AI response:**')
+        st.write(response['choices'][0]['message']['content'])

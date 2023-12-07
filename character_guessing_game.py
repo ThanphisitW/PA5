@@ -25,9 +25,8 @@ if submit_button:
             model="gpt-3.5-turbo",
             messages=messages_so_far
         )
-        # Show the response from the AI in a box
         # Extract the message content from the AI's response
-        ai_response_text = response.choices[0].message['content']
+        ai_response_text = response.choices[0].message.content
 
         # Print the AI's response
         st.markdown('**AI response:**')
@@ -41,8 +40,8 @@ if submit_button:
             model="gpt-3.5-turbo",
             messages=messages_so_far
         )
-        # Show the response from the AI in a box
-        ai_response_text = response.choices[0].message['content']
+        # Extract the message content from the AI's response
+        ai_response_text = response.choices[0].message.content
 
         # Print the AI's response
         st.markdown('**AI response:**')

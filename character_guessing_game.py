@@ -26,12 +26,4 @@ if submit_button:
     )
     # Show the response from the AI in a box
     st.markdown('**AI response:**')
-    suggestion_dictionary = response.choices[0].message.content
-
-
-    sd = json.loads(suggestion_dictionary)
-
-    print (sd)
-    suggestion_df = pd.DataFrame.from_dict(sd)
-    print(suggestion_df)
-    st.table(suggestion_df)
+    st.write(response.choices[0].text)

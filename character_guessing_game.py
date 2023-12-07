@@ -18,17 +18,29 @@ messages_so_far = [
     {"role": "system", "content": prompt},
 ]
 
-response = client.chat.completions.create(
-    model="gpt-3.5-turbo",
-    messages=messages_so_far,
-)
-
-st.markdown("**AI**")
-st.write(response.choices[0].message.content)
-
+# Get the user's input
 user_input = st.text_input("Player's Answer")
-messages_so_far.append({"role": "user", "content": user_input})
+
+if st.button("Submit"):
+    # Add the user's input to the conversation history
+    messages_so_far.append({"role": "user", "content": user_input})
+
+    # Generate a new message from the AI
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages_so_far,
+    )
+
+    # Extract the message content from the AI's response
+    ai_response_text = response.choices[0].message.content
+
+    # Print the AI's response
+    st.markdown('**AI response:**')
+    st.write(ai_response_text)
+
+    # Add the AI's response to the conversation history
+    messages_so_far.append({'role': 'assistant', 'content': ai_response_text})
 
 # Clear session state if the user wants to play again
 if st.button("Play Again"):
-    st.session_state.asked_real_person = False
+    st.session_state.clear()

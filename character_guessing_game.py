@@ -24,7 +24,10 @@ response = client.chat.completions.create(
 )
 
 st.markdown("**AI**")
-st.write(response.choices[0].message.content)
+if response.choices[0].text == "Is your character a real person":
+    pass
+else:
+    st.write(response.choices[0].message.content)
 
 user_input = st.text_input("Player's Answer")
 messages_so_far.append({"role": "user", "content": user_input})

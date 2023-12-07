@@ -7,7 +7,7 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Akinator. You will received a clue from player and your job is to guess the character or person that player think of.
-You will first ask the player "Is your character a real person", then you will start to guess the character based on the player's past answer.
+You will start to guess the character based on the player's past answer.
 Do not ask the same question or repeated queestion.
 """
 
@@ -24,10 +24,7 @@ response = client.chat.completions.create(
 )
 
 st.markdown("**AI**")
-if response.choices[0].text == "Is your character a real person":
-    pass
-else:
-    st.write(response.choices[0].message.content)
+st.write(response.choices[0].message.content)
 
 user_input = st.text_input("Player's Answer")
 messages_so_far.append({"role": "user", "content": user_input})

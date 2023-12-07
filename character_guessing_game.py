@@ -27,20 +27,8 @@ if submit_button:
             messages=message
         )
         suggestion_dictionary = response.choices[0].message.content
+        print(suggestion_dictionary)  # Print out the data you're trying to parse
         sd = json.loads(suggestion_dictionary)
         st.write(f'AI Guess {i+1}: {sd["content"]}')
         user_response = st.text_input("Please respond with yes or no, or give a hint if the question is repetitive.")
         message.append({'role': 'user', 'content': user_response})
-
-"""
-Murdurer guessing game
-- Based on true story
-- AI will give a brief story of murder case, then the user need to guess who is the real murderer
-- After finished guessing, AI will give a full story of the murder case with a like for people who want to continue reading
-
-Additional functions
-- ให้ user กด space เพื่อส่งข้อความเหมือนแชทแทนที่จะเป็น button
-- ให้เลือกภาษาที่จะใช้ทายได้
-- เปลี่ยนโหมด dark / light (ถ้า streamlit ไม่มีก็ใช้ภาษาอื่นแทน)
-- ร้องขอ additional points จากอาจารย์
-"""

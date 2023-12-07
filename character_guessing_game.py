@@ -15,7 +15,7 @@ st.markdown("Please remind that the AI model is based on the information till 20
 user_input = st.text_input("Please answer yes or no", 'yes')
 submit_button = st.button("Submit")
 
-if st.button('Submit'):
+if submit_button:
     messages_so_far = [
         {"role": "system", "content": prompt},
         {'role': 'user', 'content': user_input},

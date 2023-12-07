@@ -28,7 +28,10 @@ if submit_button:
         )
         suggestion_dictionary = response.choices[0].message.content
         print(suggestion_dictionary)  # Print out the data you're trying to parse
-        sd = json.loads(suggestion_dictionary)
-        st.write(f'AI Guess {i+1}: {sd["content"]}')
+        if suggestion_dictionary:  # Check if the response is not empty
+            sd = json.loads(suggestion_dictionary)
+            st.write(f'AI Guess {i+1}: {sd["content"]}')
+        else:
+            st.write("The AI didn't return any guesses.")
         user_response = st.text_input("Please respond with yes or no, or give a hint if the question is repetitive.")
         message.append({'role': 'user', 'content': user_response})

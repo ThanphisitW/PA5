@@ -13,11 +13,8 @@ You will start to guess the character based on the player's past answer.
 st.title("Character Guessing Game")
 st.markdown("Please remind that the AI model is based on the information till 2021.")
 
-user_input = st.text_input("Player's Answer")
-
 messages_so_far = [
     {"role": "system", "content": prompt},
-    {"role": "user", "content": user_input},
 ]
 
 response = client.chat.completions.create(
@@ -27,6 +24,9 @@ response = client.chat.completions.create(
 
 st.markdown("**AI**")
 st.write(response.choices[0].message.content)
+
+user_input = st.text_input("Player's Answer")
+messages_so_far.append({"role": "user", "content": user_input})
 
 # Clear session state if the user wants to play again
 if st.button("Play Again"):

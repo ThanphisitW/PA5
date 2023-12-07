@@ -27,7 +27,7 @@ if submit_button:
         )
         # Show the response from the AI in a box
         st.markdown('**AI response:**')
-        st.write(response['choices'][0]['message']['content'])
+        st.write(response)
     elif user_input.lower() == 'no':
         messages_so_far = [
             {"role": "system", "content": prompt},
@@ -39,4 +39,4 @@ if submit_button:
         )
         # Show the response from the AI in a box
         st.markdown('**AI response:**')
-        st.write(response['choices'][0]['message']['content'])
+        st.write(response)

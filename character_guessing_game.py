@@ -26,4 +26,4 @@ if submit_button:
     )
     # Show the response from the AI in a box
     st.markdown('**AI response:**')
-    st.write(response.choices[0].text)
+    st.write(response['choices'][0]['message']['content'])

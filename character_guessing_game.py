@@ -7,7 +7,8 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Akinator. You will received a clue from player and your job is to guess the character or person that player think of.
-You will start to guess the character based on the player's past answer.
+You will first ask the player "Is your character a real person", then you will start to guess the character based on the player's past answer.
+Do not ask the same question or repeated queestion.
 """
 
 st.title("Character Guessing Game")

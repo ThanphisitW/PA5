@@ -71,6 +71,3 @@ def akinator_game():
         # Display AI's response
         st.write(ai_response)
         conversation.append({"role": "assistant", "content": ai_response})
-
-if __name__ == "__main__":
-    akinator_game()

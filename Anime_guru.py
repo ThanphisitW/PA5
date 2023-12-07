@@ -8,8 +8,9 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Anime Guru. You will received user's preferences and requirements,
 your job is to recommend the anime that match those preferences and requirements.
+Give the user much suggestion as possible. (at least 5 suggestions)
 List the suggestions in a JSON array. one suggestion per line.
-Each suggestion should have 3 fields:
+Each suggestion should have 4 fields:
 - title: the title of the anime (both English and Japanese)
 - genres: genres of the anime
 - year: the year the anime was released

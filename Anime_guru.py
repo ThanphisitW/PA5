@@ -3,25 +3,6 @@ import openai
 import json
 import pandas as pd
 
-custom_css = """
-<style>
-    body {
-        background-color: #000000;
-    }
-
-    .element-container {
-        background-color: #000000;
-    }
-
-    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6, .stMarkdown p, .stMarkdown li, .stMarkdown a {
-        color: #ffffff;
-    }
-</style>
-"""
-
-# Inject the custom CSS into the Streamlit app
-st.markdown(custom_css, unsafe_allow_html=True)
-
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)

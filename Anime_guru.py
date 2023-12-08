@@ -11,7 +11,8 @@ your job is to recommend the anime that match those preferences and requirements
 Give the user at least 7 suggestions.
 List the suggestions in a JSON array. one suggestion per line.
 Each suggestion should have 4 fields:
-- title: the title of the anime (both English and Japanese)
+- title: the title of the anime in English
+- title: the title of the anime in Japanese
 - genres: genres of the anime
 - year: the year the anime was released
 - description: a short description of the anime

@@ -12,12 +12,16 @@
     z-index: 100;
 }
 
+.stApp > h1 {
+    color: #818FB4;
+}
+
 .stApp {
     /*background-color: black;
     color: white;
     font-family: 'Signika Negative', sans-serif;*/
-    background-color: bisque;
-    color: black;
+    background-color: #363062;
+    color: #F5E8C7;
     font-size: 14px;
     line-height: 1.6;
     margin: 0;

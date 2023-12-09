@@ -17,6 +17,9 @@ with col1:
     st.title("Welcome to Animagination! :sparkles:")
     st.markdown("Animagination is an AI-powered anime recommendation web app.")
 
+with col2:
+    st.image("https://i.imgur.com/2nE8k1F.png", width=300)
+
 #Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.

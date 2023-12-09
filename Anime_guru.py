@@ -3,17 +3,6 @@ import openai
 import json
 import pandas as pd
 
-custom_css = """
-<style>
-    body {
-        background-color: black;
-        font-family: 'Signika Negative', sans-serif;
-        color: white;
-    }
-</style>
-"""
-st.markdown(custom_css, unsafe_allow_html=True)
-
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)

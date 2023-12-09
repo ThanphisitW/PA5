@@ -22,10 +22,7 @@
     z-index: 100;
 }
 
-.stApp > title {
-    font-size: 12px;
-}
-
 h1 {
     color: white;
+    font-size: 14px;
 }

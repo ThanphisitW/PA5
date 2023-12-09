@@ -45,14 +45,20 @@ if st.button('Submit'):
 st.title("Uncertain about what to watch or new to anime? :thinking_face:")
 st.markdown("Click the button below to receive recommendations for five randomly selected anime that are suitable for beginners.")
 
-#random_user_input = "I am new to anime and I am not sure what to watch."
+random_user_input = "I am new to anime and I am not sure what to watch."
 if st.button('Help!'):
-    random_anime = """Act as an Anime Guru. the user is unsure or does not have any specific preferences,
-    recommend them 5 random anime from different genres.
+    random_anime = """Act as an Anime Guru. The user is unsure or does not have any specific preferences,
+    recommend them 5 random anime from different genres. List the suggestions in a JSON array. one suggestion per line.
+    Each suggestion should include the following 5 fields:
+    - ENG: the title of the anime in English
+    - JPN: the title of the anime in Japanese (日本語)
+    - genre: genres of the anime
+    - year: the year the anime was released
+    - description: a short description of the anime
     """
     messages_so_far = [
         {"role": "system", "content": random_anime},
-        #{'role': 'user', 'content': user_input},
+        {'role': 'user', 'content': user_input},
     ]
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",

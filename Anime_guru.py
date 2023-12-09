@@ -15,6 +15,7 @@ Each suggestion should include the following 5 fields:
 - genre: genres of the anime
 - year: the year the anime was released
 - description: a short description of the anime
+In case that the user does not have any preferences or requirements, you can provide 5 random suggestions.
 """
 
 st.title("Anime Guru :nerd_face:")

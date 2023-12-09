@@ -16,6 +16,16 @@
     color: #818FB4;
 }
 
+.glowing-universe {
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    transform: translate(-50%, -50%);
+}
+
 .stApp {
     /*background-color: black;
     color: white;

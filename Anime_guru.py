@@ -3,6 +3,15 @@ import openai
 import json
 import pandas as pd
 
+custom_css = """
+<style>
+    body {
+        background-color: black;
+        font-family: 'Signika Negative', sans-serif;
+        color: white;
+"""
+st.markdown(custom_css, unsafe_allow_html=True)
+
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
@@ -18,7 +27,7 @@ Each suggestion should include the following 5 fields:
 - description: a short description of the anime
 """
 
-st.title("Anime Guru :nerd_face:")
+st.title("Animagination :nerd_face:")
 user_input = st.text_input("What kinds of anime are you into or looking to explore?", 'I want to watch an anime that is funny and has a lot of action.')
 st.markdown("Please keep in mind that the AI model is built on data available up to the year 2021.")
 

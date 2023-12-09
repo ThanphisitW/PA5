@@ -15,7 +15,7 @@ client = openai.OpenAI(api_key=user_api_key)
 col1, col2 = st.columns(2)
 with col1:
     st.title("Welcome to Animagination! :sparkles:")
-    st.markdown("Animagination is an AI-powered anime recommendation engine./n")
+    st.markdown("Animagination is an AI-powered anime recommendation web app.")
 
 #Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

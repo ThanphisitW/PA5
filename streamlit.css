@@ -13,12 +13,12 @@
 }
 
 .stApp > h1 {
-    color: #818FB4;
+    color: white;
 }
 
 .stApp {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 14px;
     line-height: 1.6;
     margin: 0;

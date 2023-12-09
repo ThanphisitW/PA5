@@ -20,7 +20,6 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
-st.image("src/awa.png")
 st.title("Welcome to Animagination! :partying_face:")
 st.markdown("""Meet Animagination, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagination's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 

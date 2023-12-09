@@ -34,8 +34,15 @@ if st.button('Submit'):
     st.markdown('**AI response:**')
     suggestion_dictionary = response.choices[0].message.content
 
-
     sd = json.loads(suggestion_dictionary)
+
+    suggestion_df = pd.DataFrame.from_dict(sd)
+    suggestion_df_styled = suggestion_df.style.set_properties(**{
+        'background-color': 'black',
+        'color': 'lawngreen',
+        'border-color': 'white'
+    })
+    st.dataframe(suggestion_df_styled)
 
     print (sd)
     suggestion_df = pd.DataFrame.from_dict(sd)
@@ -67,19 +74,9 @@ if st.button('Help!'):
     st.markdown('**Here are some anime you might enjoy!:**')
     suggestion_dictionary = response.choices[0].message.content
 
-
     sd = json.loads(suggestion_dictionary)
 
     print (sd)
     suggestion_df = pd.DataFrame.from_dict(sd)
     print(suggestion_df)
     st.table(suggestion_df)
-
-
-suggestion_df = pd.DataFrame.from_dict(sd)
-suggestion_df_styled = suggestion_df.style.set_properties(**{
-    'background-color': 'black',
-    'color': 'lawngreen',
-    'border-color': 'white'
-})
-st.dataframe(suggestion_df_styled)

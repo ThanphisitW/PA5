@@ -11,6 +11,12 @@ with open("streamlit.css") as f:
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
+#Main page
+col1, col2 = st.columns(2)
+with col1:
+    st.title("Welcome to Animagination! :sparkles:")
+    st.markdown("Animagination is an AI-powered anime recommendation engine./n")
+
 #Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.

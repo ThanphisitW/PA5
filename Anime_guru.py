@@ -9,6 +9,7 @@ custom_css = """
         background-color: black;
         font-family: 'Signika Negative', sans-serif;
         color: white;
+</style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
 

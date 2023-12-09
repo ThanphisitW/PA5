@@ -1,12 +1,4 @@
 import streamlit as st
-import openai
-import json
-import pandas as pd
-
-#styling with css
-with open("streamlit.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-
 #setting page config
 st.set_page_config(
     page_title="Animagination",
@@ -14,6 +6,14 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+import openai
+import json
+import pandas as pd
+
+#styling with css
+with open("streamlit.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")

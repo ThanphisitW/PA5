@@ -5,9 +5,11 @@ import pandas as pd
 
 custom_css = """
 <style>
-backgroundColor: "#000000"
-font: "Signika Negative"
-textColor: "FFFFFF#
+.reportview-container {
+    backgroundColor: "#000000"
+    font: "Signika Negative"
+    textColor: "FFFFFF#
+}
 </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)

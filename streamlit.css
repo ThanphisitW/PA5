@@ -16,7 +16,7 @@
     color: #818FB4;
 }
 
-.stApp > image {
+.stApp > img {
     position: absolute;
     overflow: hidden;
     pointer-events: none;

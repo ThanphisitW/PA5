@@ -5,7 +5,9 @@ import pandas as pd
 
 #styling with css
 with open("streamlit.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+    st.markdown("""
+                <img src="hero-glow-f6eed469bca2.svg" alt="Glowing universe" class="glowing-universe">
+                <style>{}</style>""".format(f.read()), unsafe_allow_html=True)
 
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")

@@ -18,7 +18,7 @@ with col1:
     st.markdown("Meet Animagination, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagination's here for you. Let's make your anime journey as delightful as discovering a hidden gem - Animagination style! :star2:")
 
 with col2:
-    st.image("https://i.imgur.com/2nE8k1F.png", width=300)
+    st.image("名称未設定のデザイン-2020-10-14T172116.469-1.webp", width=300)
 
 #Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

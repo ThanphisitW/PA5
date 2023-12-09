@@ -6,9 +6,9 @@ import pandas as pd
 custom_css = """
 <style>
 .reportview-container {
-    backgroundColor: "#000000"
-    font: "Signika Negative"
-    textColor: "FFFFFF#
+    background-color: #000000;
+    font-family: 'Signika Negative';
+    color: #FFFFFF;
 }
 </style>
 """

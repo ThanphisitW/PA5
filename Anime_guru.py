@@ -27,9 +27,9 @@ with open("streamlit.css") as f:
                         <p>Portfolio</p>        
                     </nav>
                     <nav class="sub-nav">
-                        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-                        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-                        <a href="#">Account</a>        
+                        <p>Search</p>
+                        <p>Notifications</p>
+                        <p>Account</p>        
                     </nav>      
                 </header>
                 <style>{}</style>""".format(f.read()), unsafe_allow_html=True)

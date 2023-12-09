@@ -24,6 +24,9 @@ st.title("Welcome to Animagination! :partying_face:")
 st.markdown("""Meet Animagination, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagination's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 st.image("src/名称未設定のデザイン-2020-10-14T172116.469-1.webp")
 
+with st.container():
+    st.image("src/名称未設定のデザイン-2020-10-14T172116.469-1.webp")
+
 #Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.

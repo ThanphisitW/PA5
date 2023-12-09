@@ -3,18 +3,15 @@ import openai
 import json
 import pandas as pd
 
+user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 custom_css = """
 <style>
-.reportview-container {
-    background-color: #000000;
-    font-family: 'Signika Negative';
-    color: #FFFFFF;
-}
+    .sidebar .sidebar-content {
+        background-color: #ADD8E6;
+    }
 </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
-
-user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

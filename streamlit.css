@@ -1,7 +1,9 @@
 .stApp {
-    background-color: black;
+    /*background-color: black;
     color: white;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Signika Negative', sans-serif;*/
+    background-color: bisque;
+    color: black;
     font-size: 14px;
     line-height: 1.6;
     margin: 0;

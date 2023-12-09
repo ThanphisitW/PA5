@@ -11,7 +11,7 @@ with open("streamlit.css") as f:
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
-#Main page
+#Main
 col1, col2 = st.columns(2)
 with col1:
     st.title("Welcome to Animagination! :sparkles:")
@@ -33,7 +33,6 @@ Each suggestion should include the following 5 fields:
 - description: a short description of the anime
 """
 
-st.title("Welcome to Animagination! :sparkles:")
 user_input = st.text_input("What kinds of anime are you into or looking to explore?", 'I want to watch an anime that is funny and has a lot of action.')
 st.markdown("Please keep in mind that the AI model is built on data available up to the year 2021.")
 

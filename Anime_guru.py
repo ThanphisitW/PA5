@@ -23,9 +23,9 @@ client = openai.OpenAI(api_key=user_api_key)
 col1, col2 = st.columns(2)
 with col1:
     st.title("Welcome to Animagination! :partying_face:")
-    st.markdown("""Meet Animagination, your anime sidekick with a touch
-                of AI magic! Whether you're an anime pro or just getting started,
-                Animagination's here for you. Let's make your anime journey
+    st.markdown("""Meet Animagination, your anime sidekick with a touch of  
+                AI magic! Whether you're an anime pro or just getting started,  
+                Animagination's here for you. Let's make your anime journey  
                 as delightful as discovering a hidden gem - Animagination style! :star2:""")
 
 with col2:

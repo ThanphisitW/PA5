@@ -66,7 +66,8 @@ if st.button('Submit'):
 #New to anime?
 fixed_user_input = "Recommend me 5 random anime from different genres"
 for_newbies_prompt = """Act as an Anime Guru. The user is unsure or does not have any specific preferences,
-recommend them 5 random anime from different genres. List the suggestions in a JSON array. one suggestion per line.
+recommend them 5 random anime from different genres. 3 of the mainstream anime and 2 of the non-mainstream anime.
+List the suggestions in a JSON array. one suggestion per line.
 Each suggestion should include the following 5 fields:
 - ENG: the title of the anime in English
 - JPN: the title of the anime in Japanese (日本語)

@@ -8,9 +8,11 @@ import streamlit.components.v1 as components
 components.html(
     """
     <style>
-        background-color: black;
-        color: white;
-        font-family: 'Signika Negative', sans-serif;
+        .block-container {
+            background-color: black;
+            color: white;
+            font-family: 'Signika Negative', sans-serif;
+        }
     </style>
     """
 )

@@ -3,17 +3,23 @@ import openai
 import json
 import pandas as pd
 
-user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
-custom_css = """
-<style>
-    user_api_key {
-        background-color: #ADD8E6;
-    }
-</style>
-"""
-st.markdown(custom_css, unsafe_allow_html=True)
+#styling with css
+import streamlit.components.v1 as components
+components.html(
+    """
+    <style>
+        background-color: black;
+        color: white;
+        font-family: 'Signika Negative', sans-serif;
+    </style>
+    """
+)
 
+#sidebar
+user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
+
+#Animagination
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.
 If you cannot find 5 anime that match the user's preferences and requirements, you can provide less than 5 suggestions.
@@ -54,10 +60,7 @@ if st.button('Submit'):
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)
 
-
-
-
-
+#New to anime?
 fixed_user_input = "Recommend me 5 random anime from different genres"
 for_newbies_prompt = """Act as an Anime Guru. The user is unsure or does not have any specific preferences,
 recommend them 5 random anime from different genres. List the suggestions in a JSON array. one suggestion per line.

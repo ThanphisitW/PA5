@@ -43,8 +43,8 @@ if st.button('Submit'):
         'color': 'lawngreen',
         'border-color': 'white'
     })
-    print(suggestion_df)
-    st.table(suggestion_df)
+    print(suggestion_df_styled)
+    st.table(suggestion_df_styled)
 
 st.title("Uncertain about what to watch or new to anime? :thinking_face:")
 st.markdown("Click the button below to receive recommendations for five randomly selected anime that are suitable for beginners.")

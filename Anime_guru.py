@@ -3,12 +3,25 @@ import openai
 import json
 import pandas as pd
 
+# Define the custom CSS
+custom_css = """
+<style>
+    .reportview-container {
+        padding: 30px;
+        margin: 30px;
+    }
+</style>
+"""
+
+# Inject the custom CSS into the Streamlit app
+st.markdown(custom_css, unsafe_allow_html=True)
+
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.
-Always provide the user with at least 7 suggestions. List the suggestions in a JSON array. one suggestion per line.
+Always provide the user with at least 5 suggestions. List the suggestions in a JSON array. one suggestion per line.
 Each suggestion should include the following 5 fields:
 - ENG: the title of the anime in English
 - JPN: the title of the anime in Japanese (日本語)

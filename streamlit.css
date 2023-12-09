@@ -1,3 +1,17 @@
+header {
+    padding: 20px 20px 0 20px;
+    position: fixed;
+    top: 0;
+    display: grid;  
+    grid-gap:5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     "nt mn mn sb . . . "; 
+    background-color: var(--primary);
+    width: 100%;
+    margin-bottom: 0px;  
+  }
+
 .stApp {
     background-color: #0063c4;
     background: linear-gradient(#034484 0%,#0063c4 27%);

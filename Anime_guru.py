@@ -4,18 +4,8 @@ import json
 import pandas as pd
 
 #styling with css
-import streamlit.components.v1 as components
-components.html(
-    """
-    <style>
-        .block-container {
-            background-color: black;
-            color: white;
-            font-family: 'Signika Negative', sans-serif;
-        }
-    </style>
-    """
-)
+with open("streamlit.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")

@@ -7,6 +7,14 @@ import pandas as pd
 with open("streamlit.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 
+#setting page config
+st.set_page_config(
+    page_title="Animagination",
+    page_icon=":thought_balloon:",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
@@ -14,7 +22,7 @@ client = openai.OpenAI(api_key=user_api_key)
 #Main
 col1, col2 = st.columns(2)
 with col1:
-    st.title("Welcome to Animagination! :sparkles:")
+    st.title("Welcome to Animagination! :partying_face:")
     st.markdown("Meet Animagination, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagination's here for you. Let's make your anime journey as delightful as discovering a hidden gem - Animagination style! :star2:")
 
 with col2:

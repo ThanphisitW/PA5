@@ -75,5 +75,10 @@ if st.button('Help!'):
 
     print (sd)
     suggestion_df = pd.DataFrame.from_dict(sd)
-    print(suggestion_df)
-    st.table(suggestion_df)
+    suggestion_df_styled = suggestion_df.style.set_properties(**{
+        'background-color': 'black',
+        'color': 'lawngreen',
+        'border-color': 'white'
+    })
+    print(suggestion_df_styled)
+    st.table(suggestion_df_styled)

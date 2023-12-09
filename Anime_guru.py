@@ -6,7 +6,7 @@ import pandas as pd
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 custom_css = """
 <style>
-    .sidebar .sidebar-content {
+    user_api_key {
         background-color: #ADD8E6;
     }
 </style>

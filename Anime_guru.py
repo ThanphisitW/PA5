@@ -23,6 +23,9 @@ st.title("Anime Guru :nerd_face:")
 user_input = st.text_input("What kinds of anime are you into or looking to explore?", 'I want to watch an anime that is funny and has a lot of action.')
 st.markdown("Please keep in mind that the AI model is built on data available up to the year 2021.")
 
+st.title("Uncertain about what to watch or new to anime? :thinking_face:")
+st.markdown("Click the button below to receive recommendations for five randomly selected anime that are suitable for beginners.")
+
 if st.button('Submit'):
     messages_so_far = [
         {"role": "system", "content": prompt},

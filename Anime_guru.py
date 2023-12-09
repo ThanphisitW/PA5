@@ -3,6 +3,20 @@ import openai
 import json
 import pandas as pd
 
+#add HTML
+import streamlit.components.v1 as components
+components.html(
+    """
+    <header>
+        <ul>
+            <p>Animagination</p>
+            <p>Search</p>
+            <p>Help</p>
+        </ul>
+    """,
+    height=50
+)
+
 #styling with css
 with open("streamlit.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)

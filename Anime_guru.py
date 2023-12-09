@@ -9,7 +9,7 @@ client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.
 If you cannot find 5 anime that match the user's preferences and requirements, you can provide less than 5 suggestions.
-In case that the user does not have any preferences or requirements or unsure, you can provide 5 random suggestions.
+In case that the user does not have any preferences or requirements or unsure, you must provide 5 random suggestions.
 Always provide the user with at least 5 suggestions. List the suggestions in a JSON array. one suggestion per line.
 Each suggestion should include the following 5 fields:
 - ENG: the title of the anime in English

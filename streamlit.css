@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     background-image: url(https://sk8-project.com/assets/img/top/bg_pc.jpg);
+    font-family: YakuHanJP, "Bowlby One SC", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 h1 {

@@ -36,16 +36,13 @@ if st.button('Submit'):
 
     sd = json.loads(suggestion_dictionary)
 
+    print (sd)
     suggestion_df = pd.DataFrame.from_dict(sd)
     suggestion_df_styled = suggestion_df.style.set_properties(**{
         'background-color': 'black',
         'color': 'lawngreen',
         'border-color': 'white'
     })
-    st.dataframe(suggestion_df_styled)
-
-    print (sd)
-    suggestion_df = pd.DataFrame.from_dict(sd)
     print(suggestion_df)
     st.table(suggestion_df)
 

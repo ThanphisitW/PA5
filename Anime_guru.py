@@ -24,7 +24,7 @@ Each suggestion should include the following 5 fields:
 - description: a short description of the anime
 """
 
-st.title("Animagination :nerd_face:")
+st.title("Welcome to Animagination! :sparkles:")
 user_input = st.text_input("What kinds of anime are you into or looking to explore?", 'I want to watch an anime that is funny and has a lot of action.')
 st.markdown("Please keep in mind that the AI model is built on data available up to the year 2021.")
 
@@ -65,7 +65,7 @@ Each suggestion should include the following 5 fields:
 """
 
 st.title("New to anime? :thinking_face:")
-st.markdown("Click the button below to receive recommendations for five randomly selected anime that are suitable for beginners.")
+st.markdown("Click the button below to receive recommendations for anime that might interest you.")
 
 if st.button('Help!'):
     messages_so_far = [

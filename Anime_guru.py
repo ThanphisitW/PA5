@@ -64,7 +64,7 @@ if st.button('Help!'):
         model="gpt-3.5-turbo",
         messages=messages_so_far
     )
-    st.markdown('**AI response:**')
+    st.markdown('**Here are some anime you might enjoy!:**')
     suggestion_dictionary = response.choices[0].message.content
 
 
@@ -74,3 +74,12 @@ if st.button('Help!'):
     suggestion_df = pd.DataFrame.from_dict(sd)
     print(suggestion_df)
     st.table(suggestion_df)
+
+
+suggestion_df = pd.DataFrame.from_dict(sd)
+suggestion_df_styled = suggestion_df.style.set_properties(**{
+    'background-color': 'black',
+    'color': 'lawngreen',
+    'border-color': 'white'
+})
+st.dataframe(suggestion_df_styled)

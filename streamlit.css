@@ -23,14 +23,5 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-img {
-    position: absolute !important;
-    overflow: hidden !important;
-    pointer-events: none;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    transform: translate(-50%, -50%);
+    background-image: url(https://github.githubassets.com/assets/hero-glow-f6eed469bca2.svg);
 }

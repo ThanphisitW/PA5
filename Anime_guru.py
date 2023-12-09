@@ -15,7 +15,7 @@ client = openai.OpenAI(api_key=user_api_key)
 col1, col2 = st.columns(2)
 with col1:
     st.title("Welcome to Animagination! :sparkles:")
-    st.markdown("Animagination is an AI-powered anime recommendation web app.")
+    st.markdown("Meet Animagination, the AI-powered anime recommendation web app! Tailored for both anime veterans and beginners. Let Animagination be your guide to the exciting world of anime!")
 
 with col2:
     st.image("https://i.imgur.com/2nE8k1F.png", width=300)

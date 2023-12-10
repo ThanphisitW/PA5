@@ -23,22 +23,6 @@ header {
     height: 35px;     
 }
 
-header .main-nav {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 10px;
-    justify-content: space-between;
-}
-
-.main-nav a {
-    font-size: 16px;
-    margin: 5px;
-}
-
-.main-nav a:hover {
-    color: #686868;
-}
-
 .stApp {
     background-color: #0063c4;
     background: linear-gradient(#034484 0%,#0063c4 27%);

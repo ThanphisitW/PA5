@@ -39,11 +39,7 @@ with col1:
     </div>
     """, unsafe_allow_html=True)
 with col2:
-    st.markdown("""
-    <div class="my-style">
-        <img src="src/ezgif.com-gif-maker.gif">
-    </div>
-    """, unsafe_allow_html=True)
+    st.image("src/ezgif.com-gif-maker.gif")
 # col1, col2 = st.columns(2)
 # with col1:
 #     st.title('Welcome to Animagic! :partying_face:')

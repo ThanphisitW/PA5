@@ -150,6 +150,13 @@ st.markdown("""
             .footer img {
                 width: 32px;
                 height: 32px;
+                display: block;
+            }
+            .footer h3 {
+                color: white;
+            }
+            .footer div {
+                margin-right: 20px;
             }
             </style>
             <div class="footer">

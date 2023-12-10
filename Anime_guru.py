@@ -144,7 +144,6 @@ st.markdown("""
             <style>
             .reportview-container {
                 flex: 1 0 auto;
-                min-height: 100vh;
             }
             .footer {
                 left: 0;
@@ -158,11 +157,12 @@ st.markdown("""
             <div class="footer">
                 <div style="display: flex; justify-content: space-around;">
                     <div>
-                        <h3>Contact 1</h3>
-                        <p>If you have any questions, feel free to reach out to me on <a href="https://www.linkedin.com/in/annakrystallim/" style="color: white;">LinkedIn</a>.</p>
+                        <h4>Contact</h4>
+                        <p>Phone : +66 95 956 5752</p>
+                        <p>Email : 6640105922@student.chula.ac.th</p>
                     </div>
                     <div>
-                        <h3>Contact 2</h3>
+                        <h4></h4>
                         <p>If you like this project, please give it a :star: on <a href="https://github.com/ThanphisitW/PA5" style="color: white;">GitHub</a>.</p>
                     </div>
                 </div>

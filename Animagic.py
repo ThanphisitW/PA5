@@ -23,7 +23,7 @@ client = openai.OpenAI(api_key=user_api_key)
 st.markdown("""
             <style>
                 .my-style {
-                    padding: 0 20px 0 0;
+                    padding: 0 30px 0 0;
                 }
             </style>
             """, unsafe_allow_html=True)

@@ -18,17 +18,16 @@ header {
     padding: 0 50px 0 50px;
 }
 
-.netflixLogo .logo {  
+.netflixLogo .logo {
     height: 35px;     
 }
 
 .main-nav {
-    padding: 0 0 0 150px;
+    margin: 0 80px 0 80px;
 }
 
 .main-nav a {
     font-size: 16px;
-    margin: 10px;
     color: #F3F3F3;
     text-decoration: none;
 }

@@ -1,8 +1,8 @@
 header {
     padding: 20px 20px 0 20px;
     position: fixed;
-    top: 30px;
-    left: 30;
+    top: 35px;
+    left: 0;
     display: grid;  
     grid-gap:5px;
     grid-template-columns: 1fr 4fr 1fr;

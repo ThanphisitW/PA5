@@ -20,6 +20,20 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
+header = """
+<div style="background-color: #464e5f;padding: 10px;border-radius: 10px;margin: 10px;">
+    <h1 style="color:white;text-align:left;">Animagic</h1>
+    <div style="color:white;text-align:right;">
+        <a style="color:white;text-decoration: none;" href="#">Home</a> |
+        <a style="color:white;text-decoration: none;" href="#">Main</a> |
+        <a style="color:white;text-decoration: none;" href="#">Help</a>
+    </div>
+</div>
+"""
+st.markdown(header, unsafe_allow_html=True)
+
+st.title("Animagic")
+
 st.title("Welcome to Animagic! :partying_face:")
 st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 

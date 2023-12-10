@@ -23,15 +23,15 @@ header {
 
 .main-nav {
     display: flex;
-    padding-left: 50px;
-    color: #F3F3F3;
-    text-decoration: none;
+    padding: 0 50px 0 50px;
     justify-content: space-between;
 }
 
 .main-nav a {
     font-size: 16px;
     margin: 10px;
+    color: #F3F3F3;
+    text-decoration: none;
 }
 
 .main-nav a:hover {

@@ -35,17 +35,13 @@ with col1:
     st.markdown("""
     <div class="my-style">
         <h1>Welcome to Animagic! &#x1F973;</h1>
-        <p>Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem</p>
+        <p>Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem!</p>
     </div>
     """, unsafe_allow_html=True)
 with col2:
     st.image("src/ezgif.com-gif-maker.gif")
-# col1, col2 = st.columns(2)
-# with col1:
-#     st.title('Welcome to Animagic! :partying_face:')
-#     st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
-# with col2:
-#     st.image("src/ezgif.com-gif-maker.gif")
+
+st.divider()
 
 #Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

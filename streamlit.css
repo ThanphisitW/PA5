@@ -2,7 +2,7 @@ img {
     border-radius: 75%;
 }
 
-body {
+.stApp {
     background-color: rgb(183,189,201);
     background-color: linear-gradient(0deg, rgba(183,189,201,1) 0%, rgba(101,170,210,1) 75%, rgba(81,153,208,1) 100%);
 }

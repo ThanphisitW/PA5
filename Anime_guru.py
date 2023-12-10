@@ -77,8 +77,8 @@ if st.button('Submit'):
     print (sd)
     suggestion_df = pd.DataFrame.from_dict(sd)
     suggestion_df_styled = suggestion_df.style.set_properties(**{
-        'background-color': 'white',
-        'color': 'black',
+        'background-color': 'blue',
+        'color': 'rgb(11, 118, 241)',
         'border-color': 'black'
     })
     print(suggestion_df_styled)

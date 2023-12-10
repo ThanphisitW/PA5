@@ -1,3 +1,5 @@
+[Example Image](src/Screenshot%202023-12-10%20at%2023.09.03.png)
+
 # Animagic
 
 Animagic is a web application that uses artificial intelligence to recommend anime based on user preferences.

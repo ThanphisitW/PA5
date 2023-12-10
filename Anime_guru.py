@@ -143,7 +143,7 @@ st.markdown("""
                 left: 0;
                 bottom: 0;
                 width: 100%;
-                background-color: black;
+                background-color: #2C2F33;
                 color: white;
                 padding: 20px;
             }

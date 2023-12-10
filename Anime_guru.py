@@ -129,6 +129,10 @@ if st.button('Help!'):
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)
 
+st.markdown("")
+st.markdown("")
+st.markdown("")
+
 #Contact footer
 # with st.container():
 #     st.title("Contact")

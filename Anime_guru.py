@@ -24,7 +24,24 @@ with open("streamlit.css") as f:
                         <a href="#">Help</a>       
                     </div>
                 </header>
-                <style>{}</style>""".format(f.read()), unsafe_allow_html=True)
+                <style>
+                    .main-nav {
+                        display: flex;
+                        padding-left: 20px;
+                        padding-right: 10px;
+                        justify-content: space-between;
+                    }
+
+                    .main-nav a {
+                        font-size: 16px;
+                        margin: 5px;
+                    }
+
+                    .main-nav a:hover {
+                        color: #686868;
+                    }
+                    {}
+                </style>""".format(f.read()), unsafe_allow_html=True)
 
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")

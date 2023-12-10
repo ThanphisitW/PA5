@@ -27,7 +27,7 @@ with open("streamlit.css") as f:
                         <a href="#">Search</a>
                         <a href="#">Notifications</a>
                         <a href="#">Account</a>        
-                    </div>      
+                    </div>
                 </header>
                 <style>{}</style>""".format(f.read()), unsafe_allow_html=True)
 

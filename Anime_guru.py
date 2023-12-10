@@ -149,6 +149,7 @@ st.markdown("""
                 left: 0;
                 bottom: 0;
                 width: 100%;
+                height: 100px;
                 background-color: black;
                 color: white;
                 text-align: center;

@@ -23,12 +23,23 @@ header {
     height: 35px;     
 }
 
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #F3F3F3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 .main-nav {
     grid-area: mn;
     padding: 0 30px 0 20px;
 }
   
-.main-nav p {
+/* .main-nav p {
     color: #F3F3F3;
     text-decoration: none;
     margin: 5px;  
@@ -51,7 +62,7 @@ header {
   
 .sub-nav p:hover {
     color: #686868;
-}
+} */
 
 
 

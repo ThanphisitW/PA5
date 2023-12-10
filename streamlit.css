@@ -6,7 +6,6 @@ header {
     position: fixed;
     display: flex;
     align-items: center;
-    padding: 0 50px;
     background-color: #141414;
     z-index: 1000;
     color: #F3F3F3;

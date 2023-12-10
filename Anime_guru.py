@@ -169,8 +169,8 @@ st.markdown("""
                         <p>Email : 6640105922@student.chula.ac.th</p>
                     </div>
                     <div>
-                        <a href="https://github.com/ThanphisitW/PA5"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo">Watch the code on GitHub</a>
-                        <a href="https://www.instagram.com/dpvmdla/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram logo">Follow me on Instagram</a>
+                        <a href="https://github.com/ThanphisitW/PA5"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"></a>
+                        <a href="https://www.instagram.com/dpvmdla/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram logo"></a>
                     </div>
                 </div>
             </div>

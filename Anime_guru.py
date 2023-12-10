@@ -13,12 +13,6 @@ import pandas as pd
 import streamlit.components.v1 as components
 
 #render html file
-path_to_html = "Animagination.html" 
-with open(path_to_html,'r') as f: 
-    html_data = f.read()
-st.header("Show an external HTML")
-st.components.v1.html(html_data,height=200)
-
 components.html("""
 <!DOCTYPE html>
 <html lang="en">

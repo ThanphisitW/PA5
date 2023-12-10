@@ -23,7 +23,7 @@ header {
     height: 35px;     
 }
 
-.header .main-nav {
+header .main-nav {
     display: flex;
     padding-left: 20px;
     padding-right: 10px;

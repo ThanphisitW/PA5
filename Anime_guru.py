@@ -24,9 +24,9 @@ header = """
 <div style="background-color: #464e5f;padding: 10px;border-radius: 10px;margin: 10px;display: flex;justify-content: space-between;align-items: center;">
     <h1 style="color:white;">Animagic</h1>
     <div>
-        <a style="color:white;text-decoration: none;margin-left: 10px;" href="#">Home</a>
-        <a style="color:white;text-decoration: none;margin-left: 10px;" href="#">Main</a>
-        <a style="color:white;text-decoration: none;margin-left: 10px;" href="#">Help</a>
+        <p style="color:white;text-decoration: none;margin-left: 10px;">Home</p>
+        <p style="color:white;text-decoration: none;margin-left: 10px;">Main</p>
+        <p style="color:white;text-decoration: none;margin-left: 10px;">Help</p>
     </div>
 </div>
 """

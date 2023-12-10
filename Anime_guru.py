@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Animagination",
     page_icon=":thought_balloon:",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
 import openai

@@ -160,9 +160,9 @@ st.markdown("""
                         <p>Email : 6640105922@student.chula.ac.th</p>
                     </div>
                     <div>
-                        <h3>Follow us</h3>
+                        <h3>Follow me</h3>
                         <a href="https://github.com/ThanphisitW/PA5"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"></a>
-                        <a href="https://www.instagram.com/yourusername/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram logo"></a>
+                        <a href="https://www.instagram.com/dpvmdla/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram logo"></a>
                     </div>
                 </div>
             </div>

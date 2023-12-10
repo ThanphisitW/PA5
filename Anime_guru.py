@@ -22,10 +22,11 @@ client = openai.OpenAI(api_key=user_api_key)
 #Main
 col1, col2 = st.columns(2)
 with col1:
-    st.title("Welcome to Animagic! :partying_face:")
+    st.title("""Welcome to  
+             Animagic! :partying_face:""")
     st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 with col2:
-    st.markdown("taylor swift gif")
+    st.image("src/1884c82e90c59a78ff3aff62fa46e00b.webp")
 
 #Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

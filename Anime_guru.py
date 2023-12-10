@@ -20,8 +20,12 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
-st.title("Welcome to Animagic! :partying_face:")
-st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
+col1, col2 = st.beta_columns(2)
+with col1:
+    st.title("Welcome to Animagic! :partying_face:")
+    st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
+with col2:
+    st.image("")
 
 #Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

@@ -152,6 +152,7 @@ st.markdown("""
                 width: 32px;
                 height: 32px;
                 display: block;
+                margin-bottom: 10px;
             }
             .footer h3, .footer p {
                 color: white;

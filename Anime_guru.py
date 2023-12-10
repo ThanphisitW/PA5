@@ -144,12 +144,12 @@ st.markdown("""
             <style>
             .reportview-container {
                 flex: 1 0 auto;
+                min-height: 100vh;
             }
             .footer {
                 left: 0;
                 bottom: 0;
                 width: 100%;
-                height: 100%;
                 background-color: black;
                 color: white;
                 text-align: center;

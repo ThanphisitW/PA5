@@ -155,7 +155,7 @@ st.markdown("""
             }
             </style>
             <div class="footer">
-                <div>
+                <div style="display: flex; justify-content: flex-start;">
                     <div>
                         <h4>Contact</h4>
                         <p>Phone : +66 95 956 5752</p>

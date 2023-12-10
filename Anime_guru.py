@@ -1,7 +1,7 @@
 import streamlit as st
 #setting page config
 st.set_page_config(
-    page_title="Animagination",
+    page_title="Animagic",
     page_icon=":thought_balloon:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -20,10 +20,10 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
-st.title("Welcome to Animagination! :partying_face:")
-st.markdown("""Meet Animagination, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagination's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
+st.title("Welcome to Animagic! :partying_face:")
+st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 
-#Animagination
+#Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,
 and your job is to recommend anime that match those preferences and requirements.
 If you cannot find 5 anime that match the user's preferences and requirements, you can provide less than 5 suggestions.

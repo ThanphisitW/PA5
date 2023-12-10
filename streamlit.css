@@ -1,16 +1,15 @@
 header {
-    padding: 20px 20px 0 20px;
-    position: absolute;
-    top: 0px;
+    position: fixed;
+    top: 0;
     left: 0;
-    display: grid;  
-    grid-gap:5px;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-     "nt mn mn sb . . . "; 
-    background-color: #141414;
     width: 100%;
-    margin-bottom: 0px;  
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #141414;
+    z-index: 1000;
 }
 
 .netflixLogo {

@@ -129,19 +129,20 @@ if st.button('Help!'):
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)
 
-st.markdown("")
-st.divider()
-st.markdown("")
-
 #Contact footer
 # with st.container():
 #     st.title("Contact")
 #     st.markdown("If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/annakrystallim/).")
 #     st.markdown("If you like this project, please give it a :star: on [GitHub](https://github.com/ThanphisitW/PA5).")
 # Footer
+# Footer
 st.markdown("""
             <style>
+            .reportview-container {
+                flex: 1 0 auto;
+            }
             .footer {
+                position: fixed;
                 left: 0;
                 bottom: 0;
                 width: 100%;

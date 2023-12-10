@@ -145,15 +145,17 @@ st.markdown("""
                 width: 100%;
                 background-color: black;
                 color: white;
-                text-align: center;
+                padding: 20px;
             }
             .footer img {
                 width: 32px;
                 height: 32px;
                 display: block;
             }
-            .footer h3 {
+            .footer h3, .footer p {
                 color: white;
+                margin: 0;
+                padding: 0;
             }
             .footer div {
                 margin-right: 20px;

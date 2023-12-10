@@ -1,4 +1,4 @@
-[Example Image](src/Screenshot%202023-12-10%20at%2023.09.03.png)
+![Screenshot](src/Screenshot%202023-12-10%20at%2023.09.03.png)
 
 # Animagic
 

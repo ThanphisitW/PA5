@@ -142,7 +142,6 @@ st.markdown("""
                 flex: 1 0 auto;
             }
             .footer {
-                position: fixed;
                 left: 0;
                 bottom: 0;
                 width: 100%;

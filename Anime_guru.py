@@ -36,8 +36,7 @@ Each suggestion should include the following 5 fields:
 - description: a short description of the anime
 """
 
-user_input = st.text_input("What kinds of anime are you into or looking to explore?", 'I want to watch an anime that is funny and has a lot of action.')
-st.markdown("Please keep in mind that the AI model is built on data available up to the year 2021.")
+user_input = st.text_input("What kinds of anime are you into or looking to explore? (Please keep in mind that the AI model is built on data available up to the year 2021.)", 'I want anime that reflects everyday life and the struggles of ordinary people. Something that feels relatable.')
 
 if st.button('Submit'):
     messages_so_far = [

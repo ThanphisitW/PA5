@@ -133,8 +133,34 @@ st.markdown("")
 st.divider()
 st.markdown("")
 
-#Contact
-with st.container():
-    st.title("Contact")
-    st.markdown("If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/annakrystallim/).")
-    st.markdown("If you like this project, please give it a :star: on [GitHub](https://github.com/ThanphisitW/PA5).")
+#Contact footer
+# with st.container():
+#     st.title("Contact")
+#     st.markdown("If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/annakrystallim/).")
+#     st.markdown("If you like this project, please give it a :star: on [GitHub](https://github.com/ThanphisitW/PA5).")
+# Footer
+st.markdown("""
+            <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+            </style>
+            <div class="footer">
+                <div style="display: flex; justify-content: space-around;">
+                    <div>
+                        <h3>Contact 1</h3>
+                        <p>If you have any questions, feel free to reach out to me on <a href="https://www.linkedin.com/in/annakrystallim/" style="color: white;">LinkedIn</a>.</p>
+                    </div>
+                    <div>
+                        <h3>Contact 2</h3>
+                        <p>If you like this project, please give it a :star: on <a href="https://github.com/ThanphisitW/PA5" style="color: white;">GitHub</a>.</p>
+                    </div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)

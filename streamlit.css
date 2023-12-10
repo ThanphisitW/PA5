@@ -25,13 +25,19 @@ header {
 
 .navbar .main-nav {
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
+    padding: 0 30px 0 20px;
 }
 
 .navbar .main-nav a {
     color: #F3F3F3;
     text-decoration: none;
     font-size: 16px;
+    margin: 5px;
+}
+
+.navbar .main-nav a:hover {
+    color: #686868;
 }
 
 /*.main-nav {

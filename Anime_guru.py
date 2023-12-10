@@ -146,6 +146,7 @@ st.markdown("""
                 background-color: #2C2F33;
                 color: white;
                 padding: 20px;
+                font-weight: bold;
             }
             .footer img {
                 width: 32px;
@@ -159,6 +160,7 @@ st.markdown("""
             }
             .footer div {
                 margin-right: 20px;
+                margin-left: 20px;
             }
             </style>
             <div class="footer">

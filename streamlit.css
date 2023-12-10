@@ -9,6 +9,8 @@ header {
     padding: 0 50px;
     background-color: #141414;
     z-index: 1000;
+    color: #F3F3F3;
+    text-decoration: none;
 }
 
 .netflixLogo {
@@ -28,8 +30,6 @@ header {
 }
 
 .main-nav a {
-    color: #F3F3F3;
-    text-decoration: none;
     font-size: 16px;
     margin: 5px;
 }

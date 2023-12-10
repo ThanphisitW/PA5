@@ -20,12 +20,36 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
+# CSS
+st.markdown("""
+<style>
+    .my-style {
+        padding: 20px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Columns with custom CSS
 col1, col2 = st.columns(2)
 with col1:
-    st.title('Welcome to Animagic! :partying_face:')
-    st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
+    st.markdown("""
+    <div class="my-style">
+        <h1>Welcome to Animagic! :partying_face:</h1>
+        <p>Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:</p>
+    </div>
+    """, unsafe_allow_html=True)
 with col2:
-    st.image("src/ezgif.com-gif-maker.gif")
+    st.markdown("""
+    <div class="my-style">
+        <img src="src/ezgif.com-gif-maker.gif">
+    </div>
+    """, unsafe_allow_html=True)
+# col1, col2 = st.columns(2)
+# with col1:
+#     st.title('Welcome to Animagic! :partying_face:')
+#     st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
+# with col2:
+#     st.image("src/ezgif.com-gif-maker.gif")
 
 #Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

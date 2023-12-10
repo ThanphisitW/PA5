@@ -22,7 +22,7 @@ client = openai.OpenAI(api_key=user_api_key)
 #Main
 header = """
 <div style="background-color: #464e5f;padding: 10px;border-radius: 10px;margin: 10px;display: flex;justify-content: space-between;align-items: center;">
-    <h1 style="color:white;">Animagic</h1>
+    <p style="color:white;">Animagic</p>
     <div>
         <a style="color:white;text-decoration: none;margin-left: 10px;" href="#">Home</a>
         <a style="color:white;text-decoration: none;margin-left: 10px;" href="#">Main</a>

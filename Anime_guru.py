@@ -79,7 +79,7 @@ if st.button('Submit'):
     suggestion_df_styled = suggestion_df.style.set_properties(**{
         'background-color': 'white',
         'color': 'rgb(11, 118, 241)',
-        'border-color': 'rgba(164, 164, 170, 0.6)'
+        'border-color': 'rgba(194, 194, 201, 0.6)'
     })
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)

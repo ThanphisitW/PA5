@@ -28,8 +28,6 @@ with col2:
     st.markdown("""
     <style>
         .my-image {
-            width: 100%;
-            height: auto;
             border-radius: 75%;
         }
     </style>

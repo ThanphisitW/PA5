@@ -8,6 +8,7 @@ header {
     align-items: center;
     background-color: #141414;
     z-index: 1000;
+    justify-content: space-between;
 }
 
 .netflixLogo {
@@ -22,9 +23,7 @@ header {
 }
 
 .main-nav {
-    display: flex;
     padding: 0 0 0 80px;
-    justify-content: space-between;
 }
 
 .main-nav a {

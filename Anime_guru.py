@@ -13,8 +13,7 @@ import pandas as pd
 
 #styling with css
 with open("streamlit.css") as f:
-    st.markdown("""<style>{}</style>
-                <!DOCTYPE html>
+    st.markdown("""<!DOCTYPE html>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8" />
@@ -396,7 +395,7 @@ with open("streamlit.css") as f:
                     <script src="script.js"></script>
                 </body>
                 </html>
-                """.format(f.read()), unsafe_allow_html=True)
+                <style>{}</style>""".format(f.read()), unsafe_allow_html=True)
 
 #sidebar
 user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")

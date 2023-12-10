@@ -30,7 +30,7 @@ with col2:
         .my-image {
             width: 100%;
             height: auto;
-            border-radius: 50%;
+            border-radius: 75%;
         }
     </style>
     """, unsafe_allow_html=True)

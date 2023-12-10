@@ -41,7 +41,9 @@ with col1:
 with col2:
     st.image("src/ezgif.com-gif-maker.gif")
 
+st.markdown("")
 st.divider()
+st.markdown("")
 
 #Animagic
 prompt = """Act as an Anime Guru. You will receive users' preferences and requirements,

@@ -21,12 +21,12 @@ client = openai.OpenAI(api_key=user_api_key)
 
 #Main
 st.markdown("""
-<style>
-    .my-style {
-        padding: 0 20px 0 0;
-    }
-</style>
-""", unsafe_allow_html=True)
+            <style>
+                .my-style {
+                    padding: 0 20px 0 0;
+                }
+            </style>
+            """, unsafe_allow_html=True)
 
 # Columns with custom CSS
 col1, col2 = st.columns(2)
@@ -78,11 +78,12 @@ if st.button('Submit'):
     suggestion_df = pd.DataFrame.from_dict(sd)
     suggestion_df_styled = suggestion_df.style.set_properties(**{
         'background-color': 'white',
-        'color': 'rgb(11, 118, 241)',
+        'color': 'black',
         'border-color': 'rgba(211, 211, 219, 0.6)'
     })
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)
+    #rgb(11, 118, 241)
 
 st.markdown("")
 st.divider()
@@ -122,8 +123,14 @@ if st.button('Help!'):
     suggestion_df = pd.DataFrame.from_dict(sd)
     suggestion_df_styled = suggestion_df.style.set_properties(**{
         'background-color': 'white',
-        'color': 'rgb(11, 118, 241)',
+        'color': 'black',
         'border-color': 'rgba(211, 211, 219, 0.6)'
     })
     print(suggestion_df_styled)
     st.table(suggestion_df_styled)
+
+st.markdown("")
+st.divider()
+st.markdown("")
+
+#Contact

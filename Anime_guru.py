@@ -18,10 +18,10 @@ with open("streamlit.css") as f:
                     <div class="netflixLogo">
                         <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
                     </div>      
-                    <div class="main-nav">                
-                        <a href="#">Home</a>
-                        <a href="#">Main</a>
-                        <a href="#">Help</a>       
+                    <div class="main">                
+                        <p>Home</p>
+                        <p>Main</p>
+                        <p>Help</p>       
                     </div>
                 </header>
                 <style>{}</style>""".format(f.read()), unsafe_allow_html=True)

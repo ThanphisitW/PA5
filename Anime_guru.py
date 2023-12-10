@@ -27,9 +27,6 @@ with col1:
 with col2:
     st.markdown("""
     <style>
-        .my-image {
-            border-radius: 75%;
-        }
     </style>
     """, unsafe_allow_html=True)
     with col2:

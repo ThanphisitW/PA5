@@ -25,10 +25,6 @@ with col1:
     st.title('Welcome to Animagic! :partying_face:')
     st.markdown("""Meet Animagic, your anime sidekick with a touch of AI magic! Whether you're an anime pro or just getting started, Animagic's here for you. Let's make your anime journey as delightful as discovering a hidden gem :star2:""")
 with col2:
-    st.markdown("""
-    <style>
-    </style>
-    """, unsafe_allow_html=True)
     with col2:
         st.markdown("""
         <img src="src/ezgif.com-gif-maker.gif" class="my-image">

@@ -25,7 +25,8 @@ header {
 
 .main-nav {
     display: flex;
-    padding: 20 30px 10 20px;
+    padding-left: 20px;
+    padding-right: 10px;
     justify-content: space-between;
 }
 

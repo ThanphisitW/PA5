@@ -134,3 +134,7 @@ st.divider()
 st.markdown("")
 
 #Contact
+with st.container():
+    st.title("Contact")
+    st.markdown("If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/annakrystallim/).")
+    st.markdown("If you like this project, please give it a :star: on [GitHub](https://github.com/ThanphisitW/PA5).")

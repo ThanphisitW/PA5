@@ -23,11 +23,6 @@ with open("streamlit.css") as f:
                         <a href="#">Main</a>
                         <a href="#">Help</a>       
                     </div>
-                    <div class="sub-nav">
-                        <a href="#">Search</a>
-                        <a href="#">Notifications</a>
-                        <a href="#">Account</a>        
-                    </div>
                 </header>
                 <style>{}</style>""".format(f.read()), unsafe_allow_html=True)
 

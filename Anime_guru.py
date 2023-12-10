@@ -20,7 +20,6 @@ user_api_key = st.sidebar.text_input("OpenAPI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 
 #Main
-# CSS
 st.markdown("""
 <style>
     .my-style {

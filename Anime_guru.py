@@ -134,12 +134,6 @@ st.markdown("")
 st.markdown("")
 
 #Contact footer
-# with st.container():
-#     st.title("Contact")
-#     st.markdown("If you have any questions, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/annakrystallim/).")
-#     st.markdown("If you like this project, please give it a :star: on [GitHub](https://github.com/ThanphisitW/PA5).")
-# Footer
-# Footer
 st.markdown("""
             <style>
             .reportview-container {
@@ -153,17 +147,22 @@ st.markdown("""
                 color: white;
                 text-align: center;
             }
+            .footer img {
+                width: 32px;
+                height: 32px;
+            }
             </style>
             <div class="footer">
-                <div style="display: flex; justify-content: flex-start;">
+                <div style="display: flex; justify-content: space-between;">
                     <div>
-                        <h4>Contact</h4>
+                        <h3>Contact</h3>
                         <p>Phone : +66 95 956 5752</p>
                         <p>Email : 6640105922@student.chula.ac.th</p>
                     </div>
                     <div>
-                        <h4></h4>
-                        <p>If you like this project, please give it a :star: on <a href="https://github.com/ThanphisitW/PA5" style="color: white;">GitHub</a>.</p>
+                        <h3>Follow us</h3>
+                        <a href="https://github.com/ThanphisitW/PA5"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"></a>
+                        <a href="https://www.instagram.com/yourusername/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram logo"></a>
                     </div>
                 </div>
             </div>

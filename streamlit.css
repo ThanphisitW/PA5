@@ -25,14 +25,13 @@ header {
 
 .main-nav {
     display: flex;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 50px;
     justify-content: space-between;
 }
 
 .main-nav a {
     font-size: 16px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .main-nav a:hover {

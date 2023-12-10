@@ -23,12 +23,12 @@ header {
     height: 35px;     
 }
 
-.navbar .nav-links {
+.navbar .main-nav {
     display: flex;
     gap: 20px;
 }
 
-.navbar .nav-links a {
+.navbar .main-nav a {
     color: #F3F3F3;
     text-decoration: none;
     font-size: 16px;
